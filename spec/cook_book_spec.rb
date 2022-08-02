@@ -39,6 +39,17 @@ describe CookBook do
     expect(@cookbook.ingredients). to eq(["Cheese", "Macaroni", "Ground Beef", "Bun"])
   end
 
+  it 'can tell which recipe has the highest calories' do
+    @recipe1.add_ingredient(@ingredient1, 2)
+    @recipe1.add_ingredient(@ingredient2, 8)
+    @recipe2.add_ingredient(@ingredient1, 2)
+    @recipe2.add_ingredient(@ingredient3, 4)
+    @recipe2.add_ingredient(@ingredient4, 1)
+    @cookbook.add_recipe(@recipe1)
+    @cookbook.add_recipe(@recipe2)
+    expect(@cookbook.highest_calorie_meal).to_eq(@recipe2)
+  end
+
 
 
 

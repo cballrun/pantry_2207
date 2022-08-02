@@ -17,6 +17,8 @@ class CookBook
     end.flatten.uniq
   end
 
+  
+
 
   #@cookbook.recipes[0].ingredients[0].name
 
