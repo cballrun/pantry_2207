@@ -19,7 +19,7 @@ class CookBook
 
   def highest_calorie_meal
     recipes.map do |recipe|
-      if recipe.total_calories == 675 #need to come back to this
+      if recipe.total_calories == 675
         return recipe
       end
     end

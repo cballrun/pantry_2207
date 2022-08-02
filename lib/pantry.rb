@@ -22,13 +22,16 @@ class Pantry
     recipe.ingredients_required.map do |ingredient, amount|
       needed_hash[ingredient] = amount
      end
+    
+    
      (on_hand_hash.values.length >= needed_hash.values.length) &&
+     
         on_hand_hash.values.map do |amount|
         needed_hash.values.map do |amount2|
        
         amount >= amount2
         end
-      end
+      
       
     end
     
