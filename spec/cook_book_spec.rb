@@ -1,4 +1,4 @@
-# require './lib/ingredient'
+require './lib/ingredient'
 require './lib/recipe'
 require './lib/cook_book'
 
@@ -35,7 +35,7 @@ describe CookBook do
     @recipe2.add_ingredient(@ingredient4, 1)
     @cookbook.add_recipe(@recipe1)
     @cookbook.add_recipe(@recipe2)
-    require 'pry';binding.pry
+    
     expect(@cookbook.ingredients). to eq(["Cheese", "Macaroni", "Ground Beef", "Bun"])
   end
 
