@@ -37,6 +37,8 @@ describe Pantry do
     @pantry.restock(@ingredient1, 10)
     # require 'pry';binding.pry
     expect(@pantry.enough_ingredients_for?(@recipe1)).to eq(false)
+    @pantry.restock(@ingredient2, 7)
+    expect(@pantry.enough_ingredients_for?(@recipe1)).to eq(false)
   end
 
 
