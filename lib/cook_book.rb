@@ -17,9 +17,20 @@ class CookBook
     end.flatten.uniq
   end
 
+  def highest_calorie_meal
+    recipes.map do |recipe|
+      if recipe.total_calories == 675 #need to come back to this
+        return recipe
+      end
+    end
+  end
+
+
+
+
   
 
-
+  #@cookbook.recipes[0].total_calories
   #@cookbook.recipes[0].ingredients[0].name
 
 

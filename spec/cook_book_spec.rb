@@ -47,6 +47,7 @@ describe CookBook do
     @recipe2.add_ingredient(@ingredient4, 1)
     @cookbook.add_recipe(@recipe1)
     @cookbook.add_recipe(@recipe2)
+    require 'pry';binding.pry
     expect(@cookbook.highest_calorie_meal).to_eq(@recipe2)
   end
 
