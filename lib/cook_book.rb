@@ -1,4 +1,4 @@
-class CookBook
+class CookBook 
   attr_reader :recipes
 
   def initialize

@@ -21,6 +21,7 @@ class Recipe
     end.sum
   end
   
+  
 
 
   #@recipe1.ingredients_required[@ingredient1] gets to value of hash/amount of ingredient
