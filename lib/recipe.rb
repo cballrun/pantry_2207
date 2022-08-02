@@ -23,7 +23,6 @@ class Recipe
   
   
 
-
   #@recipe1.ingredients_required[@ingredient1] gets to value of hash/amount of ingredient
   #@recipe.ingreidents gets an array of the ingredients
   #@recipe1.ingredients[0].calories give you the amount of calories in ingredient 2

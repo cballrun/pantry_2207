@@ -35,6 +35,7 @@ describe Pantry do
   it 'can tell if it has enough ingredients for something' do
     @pantry.restock(@ingredient1, 5)
     @pantry.restock(@ingredient1, 10)
+    # require 'pry';binding.pry
     expect(@pantry.enough_ingredients_for?(@recipe1)).to eq(false)
   end
 

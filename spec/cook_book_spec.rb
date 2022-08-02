@@ -48,7 +48,7 @@ describe CookBook do
     @cookbook.add_recipe(@recipe1)
     @cookbook.add_recipe(@recipe2)
     
-    expect(@cookbook.highest_calorie_meal).to_eq(@recipe2)
+    expect(@cookbook.highest_calorie_meal).to eq(@recipe2)
   end
 
 
