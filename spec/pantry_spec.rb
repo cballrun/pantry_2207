@@ -17,13 +17,15 @@ describe Pantry do
   end
 
   it 'can do a stock check with no stock' do
-    expect(@pantry.stock_check(@ingredient_1)).to eq(0)
+    expect(@pantry.stock_check(@ingredient1)).to eq(0)
   end
 
   it 'can restock and see how much stock there is' do 
     @pantry.restock(@ingredient1, 5)
     @pantry.restock(@ingredient1, 10)
-    expect(@pantry.stock_check(@ingredient_1)).to eq(15)
+    expect(@pantry.stock_check(@ingredient1)).to eq(15)
+    @pantry.restock(@ingredient2, 7)
+    expect(@pantry.stock_check(@ingredient2)).to eq(7)
   end
 
 
